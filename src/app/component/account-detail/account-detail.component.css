@@ -1,0 +1,125 @@
+.grid {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "user" "Account" "Address" "Company";
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1.3fr 1.7fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "user Account" "user Address"
+      "user Company";
+  }
+}
+@media screen and (min-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "user Account Address"
+      "user Company Company";
+  }
+}
+.nav {
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 3rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 3.2rem;
+  color: var(--color-main-heading);
+  text-transform: uppercase;
+}
+.nav__list {
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: rgb(241, 243, 231);
+}
+i {
+  color: var(--color-main-heading);
+}
+.user {
+  grid-area: user;
+}
+.Account {
+  grid-area: Account;
+}
+.Address {
+  grid-area: Address;
+}
+.Company {
+  grid-area: Company;
+}
+.profile__card {
+  width: 100%;
+  height: 100%;
+}
+.padding {
+  padding: 2rem;
+}
+.profile__card {
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px 5px var(--color-box-shadow);
+}
+.img {
+  width: 100px;
+  height: 100px;
+  background: var(--color-dark);
+  border-radius: 100%;
+  justify-content: center;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--color-main-heading);
+}
+.desc ul {
+  padding-left: 1rem;
+}
+.desc li {
+  margin-bottom: 1.5rem;
+}
+.desc dd {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+.header {
+  width: 95%;
+  margin: auto;
+}
+.title {
+  padding-top: 1rem;
+}
+h5 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--color-main-heading);
+}
+ul {
+  padding-left: 0;
+  margin-top: 2rem;
+}
+.list {
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+dd {
+  margin: 0 1rem;
+}

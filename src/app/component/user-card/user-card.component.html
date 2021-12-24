@@ -1,0 +1,30 @@
+<div class="team_container">
+    <h1 class="Heading">
+        Users
+    </h1>
+</div>
+<div class="row flex">
+    <div class="profile_card" *ngFor = "let user of users">
+        <div class="profile_content">
+            <div class="profile_head flex">
+                <div class="img flex">{{user.name.charAt(0)}}</div>
+            </div>
+            <div class="desc flex">
+                <h2>{{user.name}}</h2>
+                <ul>
+                    <li class="flex">
+                        <i class="material-icons">email</i>
+                        <dd>{{user.email}}</dd>
+                    </li>
+                    <li class="flex">
+                        <i class="material-icons">call</i>
+                        <dd>{{user.phone}}</dd>
+                    </li>
+                </ul>
+                <a routerLink="account-detail/{{user.id}}">
+                    <button class="btn">View More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

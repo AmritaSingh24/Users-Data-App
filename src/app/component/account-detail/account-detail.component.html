@@ -1,0 +1,105 @@
+<nav class="nav flex">
+    <div >
+        <h1>Account</h1>
+    </div>
+    <a class="nav__list flex" routerLink="">
+        <i class="material-icons">home</i>
+     </a>
+ </nav>
+ <div class="header grid">
+     <div class="user padding">
+         <div class="profile__card flex padding">
+             <div class="profile__head">
+                 <div class="img flex">{{firstName.charAt(0)}}</div>
+             </div>
+             <div class="desc">
+                 <h2>{{users.name}}</h2>
+                 <ul>
+                     <li class="flex">
+                        <i class="material-icons">email</i>
+                         <dd>{{users.email}}</dd>
+                     </li>
+                     <li class="flex"> 
+                        <i class="material-icons">phone</i>
+                         <dd>{{users.phone}}</dd>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+     <div class="Account padding">
+         <div class="profile__card padding">
+             <div class="title">
+                 <h5>Account Details</h5>
+             </div>
+             <ul> 
+                 <li class="flex list "> 
+                     <dd>User ID</dd>
+                     <dd>{{users.id}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>First Name</dd>
+                     <dd id="Fname">{{firstName}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Last Name</dd>
+                     <dd id="Lname">{{lastName}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Username</dd>
+                     <dd>{{users.username}}</dd>
+                 </li>
+             </ul>
+         </div>
+     </div>
+     <div class="Address padding">
+         <div class="profile__card padding">
+             <div class="title">
+                 <h5>Address</h5>
+             </div>
+             <ul>
+                 <li class="flex list"> 
+                     <dd>Street</dd>
+                     <dd>{{users.address.street}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Suite</dd>
+                     <dd>{{users.address.suite}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>City</dd>
+                     <dd>{{users.address.city}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Zipcode</dd>
+                     <dd>{{users.address.zipcode}}</dd>
+                 </li>
+             </ul>
+         </div>
+     </div>
+     <div class="Company padding">
+         <div class="profile__card padding">
+             <div class="title">
+                 <h5>Company Details</h5>
+             </div>
+             <ul>
+                 <li class="flex list"> 
+                     <dd>Website</dd>
+                     <dd>{{users.website}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Name</dd>
+                     <dd>{{users.company.name}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>Catch Phrase</dd>
+                     <dd>{{users.company.catchPhrase}}</dd>
+                 </li>
+                 <li class="flex list"> 
+                     <dd>BS</dd>
+                     <dd>{{users.company.bs}}</dd>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </div>

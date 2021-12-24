@@ -1,0 +1,97 @@
+.team_container {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+.Heading {
+  color: var(--color-main-heading);
+  font-size: 4rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team_container {
+    padding: 30px 0;
+  }
+}
+/* card */
+.row {
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_card {
+  width: 335px;
+  height: 340px;
+  margin: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px var(--color-box-shadow);
+  white-space: nowrap;
+}
+.profile_card:hover {
+  transform: scale(1.05);
+}
+.profile_content {
+  padding: 15px;
+}
+.img {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background: var(--color-dark);
+}
+.profile_head {
+  padding-top: 1.2rem;
+}
+.icon {
+  width: 23px;
+  height: 23px;
+}
+.desc {
+  flex-direction: column;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  color: var(--color-light);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-bottom: 8px;
+}
+dd {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+.btn {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  padding: 1rem 3rem;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: 0;
+  box-shadow: 3px 3px 3px 3px #e6e6e6;
+  background: var(--color-btn);
+}
+.btn:hover {
+  background: rgb(7, 128, 111);
+}
